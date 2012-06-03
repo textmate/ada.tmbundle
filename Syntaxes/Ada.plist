@@ -96,7 +96,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(^|[\r\n])([ \t]*(?i:((private[ \t]*)?with))[ \t]+(\w+(\.\w+)*);)+</string>
+			<string>(^|[\r\n])((?i:((limited[ \t]*)?(private[ \t]*)?with))[ \t]+(\w+(\.\w+)*);[ \t]*)+</string>
 			<key>name</key>
 			<string>meta.function.ada</string>
 		</dict>

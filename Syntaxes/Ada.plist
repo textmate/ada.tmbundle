@@ -58,7 +58,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(?i:(package)(?:\b\s+(body))?)\b\s+(\w+(\.\w+)?|"(?:\+|-|=|\*|/)")</string>
+			<string>\b(?i:(package)(?:\b\s+(body))?)\b\s+(\w+(\.\w+)*|"(?:\+|-|=|\*|/)")</string>
 			<key>name</key>
 			<string>meta.function.ada</string>
 		</dict>
@@ -77,7 +77,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(?i:(end))\b\s+(\w+(\.\w+)?|"(\+|-|=|\*|/)")\s?;</string>
+			<string>\b(?i:(end))\b\s+(\w+(\.\w+)*|"(\+|-|=|\*|/)")\s?;</string>
 			<key>name</key>
 			<string>meta.function.ada</string>
 		</dict>
@@ -96,7 +96,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(?i:(with|use))\b\s+(\w+(\.\w+)*)\s?;</string>
+			<string>(^|[\r\n])([ \t]*(?i:((private[ \t]*)?with))[ \t]+(\w+(\.\w+)*);)+</string>
 			<key>name</key>
 			<string>meta.function.ada</string>
 		</dict>

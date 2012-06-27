@@ -9,7 +9,7 @@
 	<key>settings</key>
 	<dict>
 		<key>increaseIndentPattern</key>
-		<string>\b(?i:(loop|declare|begin|exception|when|is|if|else|task))\b</string>
+		<string>\b(?i:(loop|declare|begin|exception|when|is[^;]*$|if|else|task))\b</string>
 		<key>decreaseIndentPattern</key>
 		<string>\bend\b</string>
 	</dict>

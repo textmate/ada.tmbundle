@@ -9,7 +9,9 @@
 	<key>settings</key>
 	<dict>
 		<key>increaseIndentPattern</key>
-		<string>\b(?i:(loop|declare|begin|exception|when|procedure|for|if|else|task|type|package))\b</string>
+		<string>\b(?i:(loop|declare|begin|exception|when|is|then|else|task)[^;]*$)\b</string>
+		<key>decreaseIndentPattern</key>
+		<string>\b(begin|end|else)\b</string>
 	</dict>
 	<key>uuid</key>
 	<string>D6D3DAAA-49B9-46C7-AFB4-C3BD4927C5EB</string>

@@ -24,7 +24,7 @@
 html_header "Compiling “${TM_FILENAME}”…"
 
 cd "$TM_DIRECTORY"
-"${TM_GNATMAKE:-gnatmake}"gnatmake "$TM_FILENAME" &amp;&gt; &gt;(ruby -rtm_parser -eTextMate.parse_errors)
+"${TM_GNATMAKE:-gnatmake}" "$TM_FILENAME" &amp;&gt; &gt;(ruby -rtm_parser -eTextMate.parse_errors)
 if (($? &gt;= 1)); then exit; fi
 
 { "./${TM_FILENAME%.adb}"
@@ -63,6 +63,7 @@ html_footer
 			<array>
 				<string>/usr/local/ada-4.2/bin/gnatmake</string>
 				<string>/usr/local/ada-4.3/bin/gnatmake</string>
+				<string>/usr/local/gnat/bin/gnatmake</string>
 			</array>
 			<key>variable</key>
 			<string>TM_GNATMAKE</string>

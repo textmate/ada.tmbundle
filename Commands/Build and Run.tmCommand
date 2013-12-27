@@ -24,7 +24,7 @@
 html_header "Compiling “${TM_FILENAME}”…"
 
 cd "$TM_DIRECTORY"
-"${TM_GNATMAKE:-gnatmake}" "$TM_FILENAME" &amp;&gt; &gt;(ruby -rtm_parser -eTextMate.parse_errors)
+"${TM_GNATMAKE:-gnatmake}" "$TM_FILENAME" &amp;&gt; &gt;(/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rtm_parser -eTextMate.parse_errors)
 if (($? &gt;= 1)); then exit; fi
 
 { "./${TM_FILENAME%.adb}"

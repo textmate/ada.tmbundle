@@ -126,7 +126,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>"</string>
+			<string>"(?!")</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
@@ -139,6 +139,12 @@
 			<string>string.quoted.double.ada</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>match</key>
+					<string>""</string>
+					<key>name</key>
+					<string>constant.character.escape.ada</string>
+				</dict>
 				<dict>
 					<key>match</key>
 					<string>\n</string>

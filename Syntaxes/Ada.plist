@@ -75,7 +75,7 @@
 			<key>match</key>
 			<string>\b(?i:(end))\b\s+(\w+(\.\w+)*|"(\+|-|=|\*|/)")\s?;</string>
 			<key>name</key>
-			<string>meta.function.ada</string>
+			<string>meta.function.end.ada</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -83,18 +83,28 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.import.ada</string>
+					<string>keyword.control.import.limited.ada</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>string.unquoted.import.ada</string>
+					<string>keyword.control.import.private.ada</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.import.ada</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.ada</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(^|[\r\n])((?i:((limited[ \t]*)?(private[ \t]*)?with))[ \t]+(\w+(\.\w+)*);[ \t]*)+</string>
+			<string>^\s*(?:(limited)\s+)?(?:(private)\s+)?(with)\s+(\w+(\.\w+)*)\s*;</string>
 			<key>name</key>
-			<string>meta.function.ada</string>
+			<string>meta.import.ada</string>
 		</dict>
 		<dict>
 			<key>match</key>

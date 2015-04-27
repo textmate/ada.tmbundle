@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Exclude</string>
+	<key>scope</key>
+	<string>source.ada meta.import entity.name.function, source.ada meta.function.end entity.name.function</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<false/>
+	</dict>
+	<key>uuid</key>
+	<string>539EB7F7-B069-4E01-889F-FE5BBEB5B03B</string>
+</dict>
+</plist>
